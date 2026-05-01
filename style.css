@@ -1840,3 +1840,35 @@ about-highlight {
         flex: 0 0 auto;
     }
 }
+
+
+
+
+
+/* SOLO MOBILE - NON TOCCA DESKTOP */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Limita solo i contenitori principali */
+  .container, 
+  .nav-container,
+  .hero,
+  .section {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Fix elementi troppo larghi */
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+
